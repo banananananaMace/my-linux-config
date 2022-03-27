@@ -1,1 +1,2 @@
-# my-vim-config
+you should rename zsh_install.sh to .install.sh.
+
