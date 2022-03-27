@@ -36,8 +36,7 @@ syntax enable
 set cursorline 
 "set cursorcolumn
 "red,white,black,green,yellow,blue,purple,gray,brown,tan,syan
-hi CursorLine   cterm=NONE ctermbg=NONE ctermfg=NONE
-"hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white 
+hi CursorLine cterm=underline ctermfg=NONE gui=underline guifg=black
 set autoindent
 set autoread
 set autowrite
@@ -101,6 +100,7 @@ autocmd BufReadPost *
 "Set mapleader
 let mapleader=" "
 noremap <LEADER><CR> :nohl<CR>
+noremap <LEADER>e :tabedit 
 
 "self nnoremap
 nnoremap # *N
@@ -117,7 +117,7 @@ noremap <right> :vertical res +5<CR>
 
 "tabe is to edit a new file
 "usuall used to touch new file
-noremap tt :tabe<CR>
+"noremap tt :tabe<CR>
 "move to the left window
 noremap th :-tabnext<CR>
 "move to the right window
